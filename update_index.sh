@@ -2,18 +2,9 @@
 
 cd ..
 
-cp src/Python/wikipedia-analysis/Wikipedia\ Statistics.ipynb exal99.github.io/statistics.ipynb
+jupyter nbconvert --to html "src/Python/wikipedia-analysis/Wikipedia Statistics.ipynb"
 
-cd exal99.github.io
+mv "src/Python/wikipedia-analysis/Wikipedia Statistics.html" exal99.github.io/index.html
 
-jupyter nbconvert --to html statistics.ipynb
+chmod a-x exal99.github.io/index.html
 
-mv statistics.html index.html
-
-rm statistics.ipynb
-
-git add index.html
-
-git commit -m "Updated statistics"
-
-git push
