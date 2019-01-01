@@ -2,4 +2,18 @@
 
 cd ..
 
-mv /mnt/c/Users/Alexander/Downloads/statistics.html exal99.github.io/index.html
+cp src/Python/wikipedia-analysis/statistics.ipynb exal99.github.io/statistics.ipynb
+
+cd exal99.github.io
+
+jupyter nbconvert --to html statistics.ipynb
+
+mv statistics.html index.html
+
+rm statistics.ipynb
+
+git add index.html
+
+git commit -m "Updated statistics"
+
+git push
