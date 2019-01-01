@@ -2,7 +2,7 @@
 
 cd ..
 
-cp src/Python/wikipedia-analysis/statistics.ipynb exal99.github.io/statistics.ipynb
+cp src/Python/wikipedia-analysis/Wikipedia\ Statistics.ipynb exal99.github.io/statistics.ipynb
 
 cd exal99.github.io
 
