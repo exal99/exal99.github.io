@@ -21,7 +21,7 @@ sed -i '
 git add index.html
 
 if [ $# -eq 1 ]; then
-    git commit -m $1
+    git commit -m "$1"
     git push
 elif [ $# -eq 0 ]; then
     git commit -m "Updated statistics"
